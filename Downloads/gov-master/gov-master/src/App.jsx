@@ -10,7 +10,7 @@ function App({ ids, sexLetter, type }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:3001/aggregate", {
+        const res = await fetch("./api/aggregate", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
