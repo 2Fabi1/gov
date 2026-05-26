@@ -8,6 +8,7 @@ const root = document.getElementById("root");
 ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <Routes>
+      <Route path="/" element={<Homepage/>}/>
       <Route path="/damskie">
           <Route path="imiona" element={<App ids={[1159538, 63899, 54100, 44824, 36394, 28021, 21455]} sexLetter="K" type="imie"/>}/>
           <Route path="nazwiska" element={<App ids={[1148811]} sexLetter="K" type="nazwisko"/>}/>
